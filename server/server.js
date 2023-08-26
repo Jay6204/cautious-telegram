@@ -1,6 +1,7 @@
 const express = require("express");
 const dotenv = require("dotenv");
 const connectDB = require("./config/config");
+const cors = require("cors");
 require("colors");
 const morgan = require("morgan");
 
@@ -14,12 +15,18 @@ const app = express();
 
 //middlewares
 app.use(express.json());
+app.use(
+  cors({
+    origin: "*",
+  })
+);
+
 app.use(morgan("dev"));
 
 //route
 app.use("/api/pizzas", require("./routes/pizzaRoute"));
 app.use("/api/users", require("./routes/userRoutes"));
-app.use('/api/orders', require("./routes/orderRoute"));
+app.use("/api/orders", require("./routes/orderRoute"));
 
 app.get("/", (req, res) => {
   res.send("<h1>Hello From Node server Body</h1>");

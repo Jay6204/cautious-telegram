@@ -6,7 +6,7 @@ const About =()=> {
         <>
         <Container style={{marginTop: "50px"}}>
             <h1>Where we are</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur delectus dolorem quaerat est molestias, debitis eius officiis? Error alias nostrum repellat earum esse aliquam molestias, culpa possimus ratione laudantium blanditiis!</p>
+            <p>Ahmedabad, Pune, Mumbai</p>
              <h1>Our Speciality</h1>
              <Row>
                 <Col md={6}>

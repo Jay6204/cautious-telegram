@@ -27,7 +27,7 @@ const TopBar = () => {
               <Nav.Link>Contact Us</Nav.Link>
             </LinkContainer>
             <LinkContainer to="/policy">
-              <Nav.Link>terms and policy</Nav.Link>
+              <Nav.Link>Terms and Policy</Nav.Link>
             </LinkContainer>
             {isAdmin && (
               <LinkContainer to="/admin">
